@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="imagens/png" href="imagens/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/intro.css">
+    <title>Nasa</title>
+</head>
+
+<body>
+
+    <img class="foto" src="imagens/astronauta.png" alt="astronauta">
+    <p class="frase"> Olá, sou o astronauta 11, vim aqui para ajudar o Planeta 2019 com seus problemas ambientes e conscientizar os seres humanos a não prejudicarem a vida da terra para que não cheguem onde nós chegamos. </p>
+
+    <button class="botoes2">VAMOS LÁ</button>
+
+
+
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(function() {
+                    elemento.innerHTML += letra;
+                }, 20 * i)
+            });
+        }
+        const titulo = document.querySelector('p');
+        typeWriter(titulo);
+    </script>
+
+
+</html>
