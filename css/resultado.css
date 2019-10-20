@@ -1,0 +1,9 @@
+.container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mundo {
+    margin-top: -350px;
+}
