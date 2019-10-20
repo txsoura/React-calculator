@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Save Earth</title>
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imagens/logo-nasa.png">
+    </header>
+
+    <div class="container">
+        <p class="frase" style="margin-top:150px; margin-left:-5%;"> Olá, sou o astronauta 11, venho do ano 2050 e preciso da sua ajuda para salvarmos o nosso planeta.
+            A sua missão, é passar no nosso teste para que você possa nos provar, que consegue incentivar as outras crianças a cuidar do planeta.
+            Vamos nessa ?
+        </p>
+        <a href="#" class="btn-success">Card link</a>
+        <a href="#" class="btn-danger">Another link</a>
+
+        <script>
+            function typeWriter(elemento) {
+                const textoArray = elemento.innerHTML.split('');
+                elemento.innerHTML = '';
+                textoArray.forEach((letra, i) => {
+                    setTimeout(function() {
+                        elemento.innerHTML += letra;
+                    }, 30 * i)
+                });
+            }
+            const titulo = document.querySelector('p');
+            typeWriter(titulo);
+        </script>
+</body>
+
+<script>
+    function typeWriter(elemento) {
+
+        const textoArray = elemento.innerHTML.split('');
+
+        elemento.innerHTML = '';
+
+        textoArray.forEach((letra, i) => {
+
+            setTimeout(function() {
+
+                elemento.innerHTML += letra;
+
+            }, 75 * i)
+
+        });
+
+    }
+
+    const titulo = document.querySelector('h1');
+
+    typeWriter(titulo);
+</script>
+
+
+
+</html>
