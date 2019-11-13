@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Save Earth</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="imagens/logo-nasa.png" alt="Logo space apps">
+        <img class="logo" src="{{asset('imagens/logo-nasa.png')}}" alt="Logo space apps">
         <h1 class="titulo-principal">save earth</h1>
     </header>
     <div class="container">
-        <img class="astro" src="imagens/astronauta2.png" alt="astronauta">
+        <img class="astro" src="{{asset('imagens/astronauta2.png')}}" alt="astronauta">
         <div class="botao">
-            <a class="btn-primary" href="intro.html">jogar</a>
-            <a class="btn-primary" href="#">ranking</a>
+            <a class="btn-primary" href="/introducao">jogar</a>
+            <a class="btn-primary" href="/ranking">ranking</a>
         </div>
-        <img class="terra" src="imagens/salve.png" alt="planeta terra">
+        <img class="terra" src="{{asset('imagens/salve.png')}}" alt="planeta terra">
     </div>
 
 

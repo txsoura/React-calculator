@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Save Earth</title>
-
 </head>
 
 <body>
@@ -22,28 +21,28 @@
     <header>
         <img class="logo" src="imagens/logo-nasa.png">
     </header>
-
     <div class="container">
-        <p class="frase" style="margin-top:150px; margin-left:-5%;"> Olá, sou o astronauta 11, venho do ano 2050 e preciso da sua ajuda para salvarmos o nosso planeta.
-            A sua missão, é passar no nosso teste para que você possa nos provar, que consegue incentivar as outras crianças a cuidar do planeta.
-            Vamos nessa ?
-        </p>
-        <a href="#" class="btn-success">Card link</a>
-        <a href="#" class="btn-danger">Another link</a>
+        <div>
+            <p class="frase" style="margin-top:150px; margin-left:-5%;">
+                {{$pergunta[1]->questao}}
+            </p>
 
-        <script>
-            function typeWriter(elemento) {
-                const textoArray = elemento.innerHTML.split('');
-                elemento.innerHTML = '';
-                textoArray.forEach((letra, i) => {
-                    setTimeout(function() {
-                        elemento.innerHTML += letra;
-                    }, 30 * i)
-                });
-            }
-            const titulo = document.querySelector('p');
-            typeWriter(titulo);
-        </script>
+            <a href="/jogar1" class="btn-success">Sim</a>
+            <a href="/jogar1" class="btn-danger">Não</a>
+            <div>
+                <script>
+                    function typeWriter(elemento) {
+                        const textoArray = elemento.innerHTML.split('');
+                        elemento.innerHTML = '';
+                        textoArray.forEach((letra, i) => {
+                            setTimeout(function() {
+                                elemento.innerHTML += letra;
+                            }, 30 * i)
+                        });
+                    }
+                    const titulo = document.querySelector('p');
+                    typeWriter(titulo);
+                </script>
 </body>
 
 <script>
@@ -69,7 +68,5 @@
 
     typeWriter(titulo);
 </script>
-
-
 
 </html>
